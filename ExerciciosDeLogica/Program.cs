@@ -14,9 +14,9 @@ namespace ExerciciosDeLogica
         {
             Console.WriteLine("Selecione o Exercicio:");
             Console.WriteLine("1 - Conversão entre Celsius e Fahrenheit");
-            Console.WriteLine("2 - ");
-            Console.WriteLine("3 - ");
-            Console.WriteLine("4 - ");
+            Console.WriteLine("2 - Conversão de lista de Temperaturas");
+            Console.WriteLine("3 - Números de Apartamentos");
+            Console.WriteLine("4 - Soma de 100 elementos Fibonacci");
             Console.WriteLine("5 - ");
             int n;
             try
@@ -25,9 +25,19 @@ namespace ExerciciosDeLogica
                 switch (n) { 
                     case (int)1:
                         Console.WriteLine("");
-                        var exerc = new Exercicio1();
+                        var exerc1 = new ExerCelsiusFahrenheit();
+                        break;
+                    case (int)2:
+                        var exerc2 = new ExerListaTemperaturas();
+                        break;
+                    case (int)3:
+                        var exerc3 = new ExerNumerosApartamentos();
+                        break;
+                    case (int)4:
+                        var exerc4 = new ExerSoma100Fibonacci();
                         break;
                 }
+                Console.Clear();
                 Menu();
             }
             catch
