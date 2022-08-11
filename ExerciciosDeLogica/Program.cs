@@ -17,7 +17,7 @@ namespace ExerciciosDeLogica
             Console.WriteLine("2 - Conversão de lista de Temperaturas");
             Console.WriteLine("3 - Números de Apartamentos");
             Console.WriteLine("4 - Soma de 100 elementos Fibonacci");
-            Console.WriteLine("5 - ");
+            Console.WriteLine("5 - Identificar Cartões Magnéticos");
             int n;
             try
             {
@@ -35,6 +35,9 @@ namespace ExerciciosDeLogica
                         break;
                     case (int)4:
                         var exerc4 = new ExerSoma100Fibonacci();
+                        break;
+                    case (int)5:
+                        var exerc5 = new ExerIdentificacaoCartoesMagneticos();
                         break;
                 }
                 Console.Clear();
